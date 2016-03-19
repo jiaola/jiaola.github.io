@@ -1,31 +1,40 @@
 # Dependencies
-markdown:            redcarpet
-highlighter:         pygments
+markdown:            kramdown
+highlighter:         rouge
+
+syntax-highlighting:
+  enabled : true
+  css: syntax.css
+
+pygments_options: ['lineanchors']
 
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
+#relative_permalinks: true
 
 # Setup
-title:            Codinfox
-tagline:          'Learning to be Giant.'
-description:      'Blog of YourName. Here are some technical stuff. Some notes about development.'
-url:              http://codinfox.github.io
+title:            WenKu
+tagline:          'A library technology blog'
+description:      'I discovered me in the library. --Ray Bradbury'
+url:              http://www.wenku.ws
 
 author:
-  name:           'Your Name'
-  url:            http://codinfox.github.io
-  gravatar:       https://en.gravatar.com/yourname
+  name:           'David Jiao'
+  url:            http://twitter.com/djiao
+  gravatar:       https://en.gravatar.com/djiao
   photo:          http://2.gravatar.com/avatar/00000000000000000000000000000000?size=350
   introduction:   'Some introduction words that will be displayed under the avatar. You may include HTML <a href="#">here</a>.'
 
 paginate:         5
-paginate_path:    '/blog/page:num'
 
 # Custom vars
 version:          1.0.0
 
 github:
-  repo:           https://github.com/codinfox/lanyon-codinfox.github.io
+  repo:           https://github.com/jiaola/jiaola.github.io
+
+gems:
+  - jekyll-gist
+  - jekyll-paginate
