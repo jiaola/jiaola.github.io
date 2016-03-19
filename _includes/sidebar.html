@@ -13,7 +13,6 @@
 
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}" href="/">Home</a>
-    <a class="sidebar-nav-item{% if page.title == "Blog" %} active{% endif %}" href="/blog">Blog</a>
 
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
@@ -29,13 +28,13 @@
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">Fork me on Github</a>
+    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub Repository</a>
 <!--     <span class="sidebar-nav-item">Currently v{{ site.version }}</span> -->
   </nav>
 
   <div class="sidebar-item">
     <p>
-      &copy; {{ site.time | date: '%Y' }} Codinfox. This work is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.
+      &copy; {{ site.time | date: '%Y' }} wenku.ws. This work is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.
     </p>
   </div>
   <div class="sidebar-item">
