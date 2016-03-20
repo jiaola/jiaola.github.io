@@ -5,12 +5,9 @@ date: "2016-03-18 14:04"
 tags: [docker]
 ---
 
-[Docker](http://www.docker.com) is an open source technology that allows building, running, testing and
-deploying applications inside software containers. You can package your software
-in a standardized software development environment and deploy the the software
-consistently.
+[Docker](http://www.docker.com) is an open source technology that allows building, running, testing and deploying applications inside software containers. You can package your software in a standardized software development environment and deploy the the software consistently.
 
-I tested set up docker on my OSX (El Capitan). Here are the steps:
+I tested set up docker (version 1.10.3) on my OSX (El Capitan). Here are the steps:
 
 <!-- more -->
 
@@ -20,7 +17,7 @@ Following the instructions to download and [install docker toolbox](https://docs
 
 ### Hello World!
 
-After installation, the Docker Quickstart Terminal failed to start as it is instructed on the [installation instructions](https://docs.docker.com/mac/step_one/). However, don't panic. It's not necessary to use the Docker Quickstart Terminal and it's straightforward to simply run the commands from any terminal. I use [iTerm 2](https://www.iterm2.com/).
+After installation, the Docker Quickstart Terminal on my Mac failed to start as it is instructed on the [installation instructions](https://docs.docker.com/mac/step_one/). However, if you have the same problem, you don't need to panic. It's not necessary to use the Docker Quickstart Terminal and it's straightforward to simply run the commands from any terminal. I use [iTerm 2](https://www.iterm2.com/).
 
 * First start docker-machine
 
@@ -79,4 +76,4 @@ See 'docker run --help'.
 (reverse-i-search)`docker-': docker-start
 ```
 
-This means that there's no daemon running at the moment. To solve the problem, simply start the docker machine and set the environment.
+This means that there's no daemon running at the moment. To solve the problem, simply start the docker machine and set the environment variables as shown above..
