@@ -11,7 +11,9 @@ Therefore, I decided to roll my own code to do it. Since it's for a Solr Docker 
 
 <!-- more -->
 
-The package is called GitDownloader. The code is in [a GitHub repository](https://github.com/jiaola/gitdownloader). To use it, simply run the following from command line. It needs Java 8.
+The package is called GitDownloader. It uses [the GitHub API](https://developer.github.com/v3/) to recursively get the contents of a directory and download them to a local directory. The code is in [a GitHub repository](https://github.com/jiaola/gitdownloader). You may download [release 1.0](https://github.com/jiaola/gitdownloader/releases/tag/1.0) at [https://github.com/jiaola/gitdownloader/releases/download/1.0/gitdownloader-1.0.tar.gz]
+
+To use it, simply run the following from command line. It needs Java 8.
 
 ```
 java -jar gitdownloader.jar <URL> <DIR>
@@ -21,4 +23,4 @@ java -jar gitdownloader.jar <URL> <DIR>
 
 `<DIR>` is the directory where you'd like to download the content into.
 
-You may download [release 1.0](https://github.com/jiaola/gitdownloader/releases/tag/1.0) at [https://github.com/jiaola/gitdownloader/releases/download/1.0/gitdownloader-1.0.tar.gz]
+> Note that there is a rate limit by GitHub API. One can not request more than 5,000 times over an hour from the same IP. Because GitDownloader recursively request subdirectories and files in a directory, and each subdirectory and file cost a request, you may exceed this rate limit easily, and see an error message.
