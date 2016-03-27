@@ -5,9 +5,9 @@ date: "2016-03-26 23:36"
 tags: [github, java]
 ---
 
-During the process of creating a Solr Docker image for Blacklight, I needed to download a [directory that contains config files from the Blacklight GitHub repository](https://github.com/projectblacklight/blacklight/tree/master/solr). It turns out you may use svn to checkout any directory. However, I don't want to install otherwise-unnecessary SVN on my Docker image. There's [a shell script](https://github.com/ojbc/docker/blob/master/java8-karaf3/files/git-download.sh) to download a directory using shell commands but it's buggy and treats everything in the directory as a folder, and everything in the subdirectory as a file. 
+During the process of creating a Solr Docker image for Blacklight, I needed to download a [directory that contains config files from the Blacklight GitHub repository](https://github.com/projectblacklight/blacklight/tree/master/solr). It turns out you may use svn to checkout any directory. However, I don't want to install otherwise-unnecessary SVN on my Docker image. There's [a shell script](https://github.com/ojbc/docker/blob/master/java8-karaf3/files/git-download.sh) to download a directory using shell commands but it's buggy and treats everything in the directory as a folder, and everything in the subdirectory as a file.
 
-So I decided to roll my own code to do it. Since it's for a Solr Docker image, I wrote a Java-based tool so it can be easily used on my Docker image.
+So I decided to roll my own code to do it. I wrote a Java-based tool since it's going to be used on a Solr Docker image.
 
 <!-- more -->
 
