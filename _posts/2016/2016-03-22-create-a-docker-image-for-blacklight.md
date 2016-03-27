@@ -9,7 +9,7 @@ To make a Docker image for Blacklight, I started with [the official Rails image]
 
 Here's the Dockerfile:
 
-{% highlight linenos %}
+{% highlight shell linenos %}
 # A Dockerfile for Blacklight
 FROM ubuntu:14.04
 
