@@ -49,6 +49,6 @@ After the image is built, we can create a container and tested it with the right
 ```
 $ docker build -t jiaola/solr .
 $ docker run -t -d -p 8983:8983 jiaola/solr
-$ docker-machine ip
+$ docker-machine ip default
 192.168.99.100
 ```
