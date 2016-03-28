@@ -11,7 +11,7 @@ The process is very straightfoward. Below is the Dockerfile:
 
 <!-- more -->
 
-{% highlight bash linenos %}
+{% highlight shell linenos %}
 FROM solr:5.5
 
 MAINTAINER David Jiao <dazhi.jiao@gmail.com>
@@ -31,9 +31,6 @@ ADD ./gitdownloader-1.0.jar /opt/solr/gitdownloader-1.0.jar
 
 RUN java -jar /opt/solr/gitdownloader-1.0.jar https://api.github.com/repos/projectblacklight/blacklight/contents/solr/conf ${BLACKLIGHT_CORE}conf
 
-# Add start-up script
-ADD ./start.sh /opt/solr/start.sh
-
 VOLUME ["/var/solr"]
 
 WORKDIR /opt/solr
@@ -47,7 +44,7 @@ The Dockerfile is pretty straightfoward, just a few notes:
 
 Next step is to link the Solr container and [the Blacklight container](http://wenku.ws/2016/03/22/create-a-docker-image-for-blacklight/) together to have a fully-functioning application.
 
-After the image is built, we can create a container and tested it with the right IP and port. For example, it'd be `http://192.168.99.100:8983/solr` based on the following commands and output. 
+After the image is built, we can create a container and tested it with the right IP and port. For example, it'd be `http://192.168.99.100:8983/solr` based on the following commands and output.
 
 ```
 $ docker build -t jiaola/solr .
