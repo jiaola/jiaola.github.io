@@ -35,7 +35,7 @@ VOLUME ["/var/solr"]
 
 WORKDIR /opt/solr
 CMD ["sh", "-c", "solr start -f"]
-{% highlight %}
+{% endhighlight %}
 
 The Dockerfile is pretty straightfoward, just a few notes:
 
