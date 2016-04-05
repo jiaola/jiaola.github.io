@@ -7,7 +7,7 @@ tags: [docker, blacklight]
 
 To make a Docker image for Blacklight, I started with [the official Rails image](https://hub.docker.com/_/rails/) on [Docker Hub](https://hub.docker.com/), and followed the steps in [this Docker tutorial](https://docs.docker.com/engine/userguide/containers/dockerimages/).
 
-The Docker image I built is based on Ubuntu:14.04. I also tried to start with the Rails docker image, but there was some issues, which I will explain later. With Ubuntu, I installed Ruby using [RVM](https://rvm.io). I also installed NodeJS and other required packages first, and then installed Rails. I used [the Blacklight generator (aka "Creating a new application the easy way")](https://github.com/projectblacklight/blacklight/wiki/Quickstart) to create a new Blacklight applications. Here's the Dockerfile:
+The Docker image I built is based on Ubuntu:14.04. I also tried to start with the Rails docker image, but there was some issues, which I will explain later. With Ubuntu, I installed Ruby using [RVM](https://rvm.io). I also installed NodeJS and other required packages first, and then installed Rails. I used [the Blacklight generator (aka "Creating a new application the easy way")](https://github.com/projectblacklight/blacklight/wiki/Quickstart) to create a new Blacklight applications. Here's [the Dockerfile](https://github.com/jiaola/blacklight-docker/blob/07cb898e0ae115bdff41b2801d360a81d19cda14/images/blacklight/Dockerfile):
 
 <!-- more -->
 
@@ -51,7 +51,7 @@ $ docker build -t jiaola/blacklight .
 $ docker run -t -d -p 3000:3000 jiaola/blacklight
 ```
 
-There was a few errors when the generator tried to start/stop the jetty server. This is because Java wasn't installed on the image. I just ignored them. 
+There was a few errors when the generator tried to start/stop the jetty server. This is because Java wasn't installed on the image. I just ignored them.
 
 On my OSX, I can visit the Blacklight site, using [the IP of the Docker virtual box](http://wenku.ws/2016/03/21/run-a-simple-application-with-docker-on-osx/).
 
