@@ -25,7 +25,7 @@ author:
   url:            http://twitter.com/djiao
   gravatar:       https://en.gravatar.com/djiao
   photo:          http://1.gravatar.com/avatar/3753f3aa8631c46c0e51525edf9bbbd7?size=120
-  introduction:   'Finding Structure in Unstructured Data'
+  introduction:   'David Jiao: Finding Structure in Unstructured Data'
 
 paginate:         5
 
@@ -33,7 +33,9 @@ paginate:         5
 version:          1.0.0
 
 github:
-  repo:           https://github.com/jiaola/jiaola.github.io
+  repo:           https://github.com/jiaola/
+
+twitter:          http://twitter.com/djiao
 
 gems:
   - jekyll-gist
