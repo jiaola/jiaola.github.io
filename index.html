@@ -16,6 +16,8 @@ title: Blog
             {{ post.date | date_to_string }}
             {% if post.tags != empty %}
             |
+            <a href="{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{page.url}}"></a>
+            |
             {% for tag in post.tags %}
             <a class="codinfox-tag-mark" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
             {% endfor %}
