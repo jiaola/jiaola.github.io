@@ -8,7 +8,7 @@ layout: default
     {{ page.date | date_to_string }}
     {% if page.tags != empty %}
     |
-    <a href="{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{page.url}}"></a>
+    <a href="{{ page.url }}index.html#disqus_thread" data-disqus-identifier="{{page.url}}"></a>
     |
     {% for tag in page.tags %}
     <a class="codinfox-tag-mark" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
