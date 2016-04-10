@@ -3,6 +3,7 @@ layout: "post"
 title: "Run a simple web application in Docker on OSX"
 date: "2016-03-21 11:41"
 tags: [docker]
+comments: true
 ---
 
 After I [installed docker on OSX](http://wenku.ws/2016/03/18/install-docker-on-mac-osx-el-capitan/), I tried to follow another example in Docker documentation to [run a simple Python Flask web application](https://docs.docker.com/engine/userguide/containers/usingdocker/). The instructions are pretty straightforward. However, after I had the application running with this command

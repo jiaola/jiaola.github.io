@@ -3,6 +3,7 @@ layout: "post"
 title: "Install Docker on Mac OSX El Capitan"
 date: "2016-03-18 14:04"
 tags: [docker]
+comments: true
 ---
 
 [Docker](http://www.docker.com) is an open source technology that allows building, running, testing and deploying applications inside software containers. You can package your software in a standardized software development environment and deploy the the software consistently.

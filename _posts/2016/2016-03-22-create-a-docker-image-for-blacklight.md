@@ -3,6 +3,7 @@ layout: "post"
 title: "Create a Docker image for Blacklight"
 date: "2016-03-22 21:40"
 tags: [docker, blacklight]
+comments: true
 ---
 
 To make a Docker image for Blacklight, I started with [the official Rails image](https://hub.docker.com/_/rails/) on [Docker Hub](https://hub.docker.com/), and followed the steps in [this Docker tutorial](https://docs.docker.com/engine/userguide/containers/dockerimages/).

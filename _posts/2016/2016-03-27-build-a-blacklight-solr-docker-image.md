@@ -3,6 +3,7 @@ layout: "post"
 title: "Build a Blacklight Solr Docker Image"
 date: "2016-03-27 19:28"
 tags: [solr, docker, blacklight]
+comments: true
 ---
 
 A few days ago, I created a Docker image for the Blacklight app. Even though the image is successfully built, the blacklight website is not functioning since there's no Solr backend. Today I tried to build a Solr image based on the default Solr configuration that shipped with Blacklight.

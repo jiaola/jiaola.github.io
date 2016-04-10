@@ -3,6 +3,7 @@ layout: "post"
 title: "Discover the Solr Container by Using the Docker Link Feature"
 date: "2016-04-05 07:01"
 tags: [docker, blacklight, solr]
+comments: true
 ---
 
 As I stated earlier, the issue with [the Blacklight image I built earlier](http://wenku.ws/2016/03/22/create-a-docker-image-for-blacklight/) is the lack of Solr  in the backend. Now that [I had created the Solr image](http://wenku.ws/2016/03/27/build-a-blacklight-solr-docker-image/), I tried to let the Blacklight container discover the Solr container by using [the Docker link feature](https://docs.docker.com/engine/userguide/networking/default_network/dockerlinks/#connect-with-the-linking-system).

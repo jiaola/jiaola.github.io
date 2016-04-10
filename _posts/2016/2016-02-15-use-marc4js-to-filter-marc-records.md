@@ -3,6 +3,7 @@ layout: "post"
 title: "Use Marc4JS to filter MARC records "
 date: "2016-02-15 23:53"
 tags: [marc4js, marc]
+comments: true
 ---
 
 Sometimes we need to process records from a huge MARC file and remove some records

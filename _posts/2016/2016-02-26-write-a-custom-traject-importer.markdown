@@ -3,6 +3,7 @@ layout: "post"
 title: "Write a custom traject importer"
 date: "2016-02-26 19:24"
 tags: [marc, solr, traject]
+comments: true
 ---
 
 [Traject](https://github.com/traject/traject) is a gem that facilitate
