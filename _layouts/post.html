@@ -6,9 +6,11 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date" style="display:inline-block;">
     {{ page.date | date_to_string }}
-    {% if page.tags != empty %}
+    {% if page.comments %}
     |
     <a href="{{ page.url }}index.html#disqus_thread" data-disqus-identifier="{{page.url}}"></a>
+    {% endif %}
+    {% if page.tags != empty %}
     |
     {% for tag in page.tags %}
     <a class="codinfox-tag-mark" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
