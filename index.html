@@ -27,9 +27,6 @@ title: Blog
         {{ post.content | split:"<!-- more -->" | first % }}
 
         <div class="codinfox-post-more">
-            {% if post.comments %}
-            <a href="{{ post.url }}#disqus_thread">Comment</a>&nbsp;
-            {% endif %}
             <a href="{{ post.url }}">Read more</a>
         </div>
         <hr/>
