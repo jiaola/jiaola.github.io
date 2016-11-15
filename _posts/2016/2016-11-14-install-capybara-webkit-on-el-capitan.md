@@ -10,5 +10,5 @@ I had to jump through hoops to install the capybara-webkit gem on Mac OS X 10.11
 brew install qt5 --with-qtwebkit
 brew linkapps qt5
 brew link --force qt5
-
-gem install
+gem install capybara-webkit
+```
