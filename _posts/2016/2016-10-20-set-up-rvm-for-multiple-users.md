@@ -14,6 +14,8 @@ To set up RVM for multiple users on a linux system, do the following:
 \curl -sSL https://get.rvm.io | sudo bash -s stable
 ```
 
+<!-- more -->
+
 Then add users to the group `rvm`.
 
 ```

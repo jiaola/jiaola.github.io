@@ -18,6 +18,8 @@ gem install passenger --no-rdoc --no-ri
 passenger-install-apache2-module
 ```
 
+<!-- more -->
+
 You might see any error that some prerequisites are missing, such as
 
 ```
