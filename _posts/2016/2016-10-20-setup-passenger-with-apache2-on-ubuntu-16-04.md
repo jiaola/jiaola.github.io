@@ -2,6 +2,8 @@
 layout: "post"
 title: "Setup Passenger with Apache2 on Ubuntu 16.04"
 date: "2016-10-20 14:27"
+tags: [Ruby on Rails, passenger]
+comments: true
 ---
 
 To set up Passenger with Apache2, do the following:

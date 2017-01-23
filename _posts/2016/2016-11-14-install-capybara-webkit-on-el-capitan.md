@@ -2,6 +2,8 @@
 layout: "post"
 title: "Install capybara-webkit on El Capitan"
 date: "2016-11-14 22:52"
+tags: [ruby on rails, test]
+comments: true
 ---
 
 I had to jump through hoops to install the capybara-webkit gem on Mac OS X 10.11 (El Capitan). But it turned out to be pretty straight-forward. Here are the steps that I finally got to work:

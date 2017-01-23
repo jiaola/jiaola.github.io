@@ -2,6 +2,8 @@
 layout: "post"
 title: "Set up RVM for multiple users"
 date: "2016-10-20 13:38"
+tags: [ruby on rails, rvm]
+comments: true
 ---
 
 [RVM (Ruby Version Manager)][b49e701c], is a command-line tool to manage the installation of Ruby. It makes working with multiple Ruby versions really easy, and it allows an application level of "set of gems".
