@@ -16,6 +16,8 @@ mvn clean install
 
 RMB will generate source codes based on raml files and the generated code is in the target directory. IntelliJ is doing a good job to pick it up so when you try to access the source of the generated classes it'll automatically open the correct files.
 
+<!-- more -->
+
 To set up the Run/Debug configuration, follow the set up in this screen shot.
 
 ![Run/Debug configuration for a Folio module](/images/2018/06/Screen Shot 2018-06-21 at 1.26.44 PM.png)
