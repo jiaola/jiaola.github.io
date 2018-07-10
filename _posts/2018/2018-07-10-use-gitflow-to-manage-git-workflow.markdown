@@ -13,6 +13,8 @@ Make sure that you have no uncommitted changes before you start any gitflow bran
 ## Feature Branch
 Use Gitflow to create feature branches when working on a regular JIRA ticket during a sprint. Here we use LAG-999 as an example.
 
+<!-- more -->
+
 1. From command line, run the following command to create a new branch feature/LAG-999. It'll be automatically checked out after it's created.
 
 ```
